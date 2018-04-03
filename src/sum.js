@@ -18,7 +18,7 @@ const sum = (num1, num2) => {
     // 存储每次两个数相加后的进位
     let carry = 0;
     for (let i = 0; i < len; i++) {
-      const sumNum = Number(arr1[i]) || 0 + Number(arr2[i]) || 0;
+      const sumNum = (Number(arr1[i]) || 0) + (Number(arr2[i]) || 0);
       result.push(sumNum % 10);
       carry = sumNum / 10;
     }
