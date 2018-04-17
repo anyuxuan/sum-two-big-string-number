@@ -25,6 +25,6 @@ const sum = (num1, num2) => {
     if (carry) {
       result.push(carry);
     }
-    return result.reverse().join('');
+    return Number(result.reverse().join(''));
   }
 }
