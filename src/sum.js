@@ -20,7 +20,7 @@ const sum = (num1, num2) => {
     for (let i = 0; i < len; i++) {
       const sumNum = (Number(arr1[i]) || 0) + (Number(arr2[i]) || 0) + carry;
       result.push(sumNum % 10);
-      carry = sumNum / 10;
+      carry = parseInt(sumNum / 10, 10);
     }
     if (carry) {
       result.push(carry);
