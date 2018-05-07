@@ -1,11 +1,11 @@
 const sum = (num1, num2) => {
-  if (Number.isNaN(Number(num1)) || Number.isNaN(Number(num2))) {
+  if (isNaN(Number(num1)) || isNaN(Number(num2))) {
     return 0;
   }
   if (
-    Number.isFinite(Number(num1)) &&
-    Number.isFinite(Number(num2)) &&
-    Number.isFinite(Number(num1) + Number(num2))
+    isFinite(Number(num1)) &&
+    isFinite(Number(num2)) &&
+    isFinite(Number(num1) + Number(num2))
   ) {
     return Number(num1) + Number(num2);
   } else {
